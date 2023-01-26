@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Suite">
+
+  <test thread-count="3" parallel="tests" name="TestChrome">
+  <parameter name="Browser" value="Chrome"></parameter>
+    <classes>
+      <class name="assignment12.Task1"/>
+      <class name="assignment12.Task2"/>
+    </classes>
+  </test> 
+  
+   <test thread-count="3" parallel="tests" name="TestEdge">
+  <parameter name="Browser" value="Edge"></parameter>
+    <classes>
+      <class name="assignment12.Task1"/>
+      <class name="assignment12.Task2"/>
+    </classes>
+  </test> 
+  
+   <test thread-count="3" parallel="tests" name="TestFF">
+  <parameter name="Browser" value="FireFox"></parameter>
+    <classes>
+      <class name="assignment12.Task1"/>
+      <class name="assignment12.Task2"/>
+    </classes>
+  </test> 
+  
+</suite> 
